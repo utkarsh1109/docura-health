@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Docura Health — Claims Copilot",
+  "version": "0.1.0",
+  "description": "Read-only overlay that extracts claim fields from any claims portal (e.g. Northstar) via a point-and-click picker, and flags outstanding items before a claim can be closed.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options/options.html",
+  "action": {
+    "default_title": "Toggle Docura Health sidebar"
+  }
+}

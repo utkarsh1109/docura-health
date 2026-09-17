@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Docura Health — Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Docura Health</h1>
+      <p class="sub">Review what's been set up per site, clear cached claim statuses, or wipe a site's setup entirely. The actual one-time setup (pointing at the Requirements table and the claims list) happens in the sidebar on the real claims page.</p>
+      <div class="toolbar">
+        <button id="exportBtn">Export config (.json)</button>
+        <label class="file-btn">
+          Import config (.json)
+          <input type="file" id="importInput" accept="application/json" hidden />
+        </label>
+      </div>
+    </header>
+    <main id="sites"></main>
+    <script src="../lib/storage.js"></script>
+    <script src="options.js"></script>
+  </body>
+</html>

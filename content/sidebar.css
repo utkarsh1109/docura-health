@@ -1,0 +1,65 @@
+/* Scoped to the host page only for the tiny bits that must live outside the
+   shadow root (the picker hover outline). Everything else is shadow-scoped
+   inline in sidebar.js so it can never leak into / clash with Northstar's
+   own styles. */
+.docura-hover-outline {
+  outline: 2px solid #2f6fed !important;
+  outline-offset: 1px !important;
+  cursor: crosshair !important;
+}
+
+/* Badges Docura Health injects next to claim links on a mapped list page. */
+.docura-badge {
+  display: inline-block !important;
+  margin-left: 8px !important;
+  padding: 1px 8px !important;
+  border-radius: 999px !important;
+  font-size: 11px !important;
+  font-family: system-ui, sans-serif !important;
+  font-weight: 600 !important;
+  vertical-align: middle !important;
+  white-space: nowrap !important;
+}
+.docura-badge-unknown { background: #f3f4f6 !important; color: #6b7280 !important; }
+.docura-badge-clear { background: #dcfce7 !important; color: #15803d !important; }
+.docura-badge-pending { background: #fee2e2 !important; color: #b91c1c !important; }
+.docura-badge-none { background: #fef3c7 !important; color: #92400e !important; }
+.docura-badge { cursor: pointer !important; }
+.docura-badge:hover { filter: brightness(0.95) !important; }
+
+/* Popup shown when a badge is clicked to check a claim on demand. */
+.docura-popup {
+  position: absolute !important;
+  z-index: 2147483003 !important;
+  background: #fff !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18) !important;
+  padding: 10px 12px !important;
+  width: 280px !important;
+  font-family: system-ui, sans-serif !important;
+  font-size: 13px !important;
+  color: #111827 !important;
+}
+.docura-popup-head {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  color: #374151 !important;
+  margin-bottom: 6px !important;
+}
+.docura-popup-close {
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-size: 13px !important;
+  color: #6b7280 !important;
+  padding: 0 !important;
+}
+.docura-popup ul { margin: 0 !important; padding-left: 18px !important; }
+.docura-popup li { margin-bottom: 4px !important; }
+.docura-popup p { margin: 0 !important; }
+.docura-popup a { color: #2f6fed !important; }

@@ -1,0 +1,19 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #f9fafb; color: #111827; }
+header { padding: 20px 28px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+h1 { margin: 0 0 4px; font-size: 18px; }
+.sub { margin: 0 0 12px; color: #6b7280; font-size: 13px; max-width: 640px; }
+.toolbar { display: flex; gap: 10px; }
+.toolbar button, .file-btn {
+  background: #fff; border: 1px solid #d1d5db; border-radius: 6px; padding: 6px 12px;
+  font-size: 13px; cursor: pointer;
+}
+main { padding: 20px 28px; display: flex; flex-direction: column; gap: 20px; max-width: 900px; }
+.site-card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; }
+.site-card h2 { margin: 0 0 4px; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+.site-card .count { color: #6b7280; font-weight: 400; font-size: 12px; }
+.site-card table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: 13px; }
+.site-card th, .site-card td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #f3f4f6; }
+.site-card th { color: #6b7280; font-weight: 600; font-size: 11px; text-transform: uppercase; }
+.danger { color: #b91c1c; background: none; border: none; cursor: pointer; font-size: 12px; }
+.empty-state { color: #6b7280; text-align: center; padding: 40px; }
+input[type="text"] { padding: 4px 6px; border: 1px solid #d1d5db; border-radius: 4px; font-size: 12px; width: 100%; }
